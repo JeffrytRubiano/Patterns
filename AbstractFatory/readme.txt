@@ -1,0 +1,6 @@
+﻿////////////////////////////////////////////////////////////////////////////////////////
+++++++++++++++++++++++++++++++++++ Abstract Factory ++++++++++++++++++++++++++++++++++++
+////////////////////////////////////////////////////////////////////////////////////////
+
+This pattern can help you when you need to have many factories that are responsible to 
+create objects and also when you want to separate the responsibility of creation.
