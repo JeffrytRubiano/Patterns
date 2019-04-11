@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "Abstract
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{A26388A3-F179-4380-886E-5D17B25BC6A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{CBBAF4A0-0C0D-49C5-9C7D-57376BD87B98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{CBBAF4A0-0C0D-49C5-9C7D-57376BD87B98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{FA76F272-67FA-4A13-8D71-569DB1FC58F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CBBAF4A0-0C0D-49C5-9C7D-57376BD87B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBBAF4A0-0C0D-49C5-9C7D-57376BD87B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBBAF4A0-0C0D-49C5-9C7D-57376BD87B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA76F272-67FA-4A13-8D71-569DB1FC58F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA76F272-67FA-4A13-8D71-569DB1FC58F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA76F272-67FA-4A13-8D71-569DB1FC58F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA76F272-67FA-4A13-8D71-569DB1FC58F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{A8C58BF2-C170-43A2-ABEE-0622E15E89B1} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
 		{A26388A3-F179-4380-886E-5D17B25BC6A3} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
 		{CBBAF4A0-0C0D-49C5-9C7D-57376BD87B98} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
+		{FA76F272-67FA-4A13-8D71-569DB1FC58F9} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2CE448CD-9B49-464D-846F-16A96998A3E9}
