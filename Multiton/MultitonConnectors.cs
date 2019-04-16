@@ -10,5 +10,10 @@ namespace Multiton
              new Dictionary<Guid, IConnector>();
         private int id;
 
+        private MultitonConnectors()
+        {
+
+        }
+
     }
 }
