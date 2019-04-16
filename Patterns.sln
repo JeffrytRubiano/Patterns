@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{CBBAF4A0-0C0D-49C5-9C7D-57376BD87B98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{FA76F272-67FA-4A13-8D71-569DB1FC58F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{FA76F272-67FA-4A13-8D71-569DB1FC58F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyInitialization", "LazyInitialization\LazyInitialization.csproj", "{B28F5F03-4909-4A4F-9EE6-A0DB9D9565B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{FA76F272-67FA-4A13-8D71-569DB1FC58F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA76F272-67FA-4A13-8D71-569DB1FC58F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA76F272-67FA-4A13-8D71-569DB1FC58F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28F5F03-4909-4A4F-9EE6-A0DB9D9565B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28F5F03-4909-4A4F-9EE6-A0DB9D9565B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28F5F03-4909-4A4F-9EE6-A0DB9D9565B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28F5F03-4909-4A4F-9EE6-A0DB9D9565B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{A26388A3-F179-4380-886E-5D17B25BC6A3} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
 		{CBBAF4A0-0C0D-49C5-9C7D-57376BD87B98} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
 		{FA76F272-67FA-4A13-8D71-569DB1FC58F9} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
+		{B28F5F03-4909-4A4F-9EE6-A0DB9D9565B1} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2CE448CD-9B49-464D-846F-16A96998A3E9}
