@@ -10,8 +10,8 @@ namespace FactoryMethod
 
             Console.WriteLine("Standard quiz");
             Console.WriteLine(" Questions:");
-            var standar = factory.CreateQuiz(QuizType.Standar).GetQuestions();
-            foreach (var q in standar)
+            var standard = factory.CreateQuiz(QuizType.Standard).GetQuestions();
+            foreach (var q in standard)
             {
                 Console.WriteLine($"  {q}");
             }

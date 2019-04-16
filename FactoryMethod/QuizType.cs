@@ -3,6 +3,6 @@
     public enum QuizType
     {
         Advance,
-        Standar
+        Standard
     }
 }

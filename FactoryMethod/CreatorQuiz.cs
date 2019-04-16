@@ -11,7 +11,7 @@
                     quiz = new AdvanceQuiz();
                     break;
 
-                case QuizType.Standar:
+                case QuizType.Standard:
                     quiz = new StandarQuiz();
                     break;
 
