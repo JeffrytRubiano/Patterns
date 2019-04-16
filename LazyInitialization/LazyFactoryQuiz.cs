@@ -8,7 +8,7 @@ namespace LazyInitialization
     /// </summary>
     public class LazyFactoryQuiz
     {
-        private IDictionary<QuizType, IQuiz> _LazyObjectList = new Dictionary<QuizType, IQuiz>();
+        private readonly IDictionary<QuizType, IQuiz> _LazyObjectList = new Dictionary<QuizType, IQuiz>();
 
         public LazyFactoryQuiz()
         {
