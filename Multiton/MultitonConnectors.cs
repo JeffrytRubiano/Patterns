@@ -1,19 +1,21 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Multiton
 {
     public sealed class MultitonConnectors
     {
-        private static readonly IDictionary<Guid, IConnector> staticInstances =
-             new Dictionary<Guid, IConnector>();
-        private int id;
+        private static readonly IDictionary<ConnectorType, IConnector> staticInstances =
+             new Dictionary<ConnectorType, IConnector>();
 
-        private MultitonConnectors()
+        public static IConnector GetInstance(ConnectorType connectorType)
         {
+            if (!staticInstances.ContainsKey(connectorType))
+            {
+                staticInstances.Add(connectorType,
+                    new FactoryConnection().GetConnector(connectorType));
+            }
 
+            return staticInstances[connectorType];
         }
-
     }
 }
