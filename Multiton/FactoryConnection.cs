@@ -1,5 +1,8 @@
 ﻿namespace Multiton
 {
+    /// <summary>
+    /// Pattern factory method to create instances.
+    /// </summary>
     public class FactoryConnection : IFactoryConnection
     {
         public IConnector GetConnector(ConnectorType connectorType)
