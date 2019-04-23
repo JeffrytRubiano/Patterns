@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyInitialization", "LazyInitialization\LazyInitialization.csproj", "{B28F5F03-4909-4A4F-9EE6-A0DB9D9565B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiton", "Multiton\Multiton.csproj", "{17A862EB-79CB-4ADC-ADF6-9C7E2E2435F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multiton", "Multiton\Multiton.csproj", "{17A862EB-79CB-4ADC-ADF6-9C7E2E2435F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectPool", "ObjectPool\ObjectPool.csproj", "{70906960-6E28-42EA-BCE5-F3E45F0F4459}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{17A862EB-79CB-4ADC-ADF6-9C7E2E2435F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17A862EB-79CB-4ADC-ADF6-9C7E2E2435F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17A862EB-79CB-4ADC-ADF6-9C7E2E2435F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70906960-6E28-42EA-BCE5-F3E45F0F4459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70906960-6E28-42EA-BCE5-F3E45F0F4459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70906960-6E28-42EA-BCE5-F3E45F0F4459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70906960-6E28-42EA-BCE5-F3E45F0F4459}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{FA76F272-67FA-4A13-8D71-569DB1FC58F9} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
 		{B28F5F03-4909-4A4F-9EE6-A0DB9D9565B1} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
 		{17A862EB-79CB-4ADC-ADF6-9C7E2E2435F6} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
+		{70906960-6E28-42EA-BCE5-F3E45F0F4459} = {3BA1ECF7-90FC-49DF-ACAC-4C65FEF75E45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2CE448CD-9B49-464D-846F-16A96998A3E9}
