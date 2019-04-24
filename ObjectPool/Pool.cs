@@ -1,36 +1,30 @@
-﻿using System.Collections.Concurrent;
+﻿using System;
+using System.Collections.Concurrent;
 
 namespace ObjectPool
 {
-    public class Pool<T> where T : new()
+    public class Pool<T> where T : class
     {
-        private readonly ConcurrentBag<T> rooms = new ConcurrentBag<T>();
-        private int counter = 0;
-        private readonly int max = 10;
+        private readonly Func<T> _generator;
+        private readonly ConcurrentBag<T> _pool;
 
-        public void PutBack(T obj)
+        // Inject the behavior to create the object.
+        public Pool(Func<T> delegateGenerator)
         {
-            if (counter < max)
-            {
-                rooms.Add(obj);
-                counter++;
-            }
+            _pool = new ConcurrentBag<T>();
+            _generator = delegateGenerator;
         }
 
         public T Get()
         {
-            if (rooms.TryTake(out T obj))
-            {
-                counter--;
-                return obj;
-            }
-            else
-            {
-                T newObj = new T();
-                rooms.Add(newObj);
-                counter++;
-                return newObj;
-            }
+            if (_pool.TryTake(out T item)) return item;
+
+            return _generator();
+        }
+
+        public void PutBack(T obj)
+        {
+            _pool.Add(obj);
         }
     }
 }
